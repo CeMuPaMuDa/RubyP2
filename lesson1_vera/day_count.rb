@@ -19,6 +19,6 @@ start = t2 < t1 ? t2 : t1
 
 while i <= count.first
 
-  puts (start + (count.first) + (86_400 * i)).strftime('%d.%m.%Y')
+  puts (start + count.first + (86_400 * i)).strftime('%d.%m.%Y')
   i += 1
 end
