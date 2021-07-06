@@ -27,6 +27,6 @@ class MathemathicsOperations
   end
 
   def division(dividend, divider)
-    (dividend / divider).round(2)
+    (dividend / divider)
   end
 end
