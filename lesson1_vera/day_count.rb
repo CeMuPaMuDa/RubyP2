@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'lib\calendar'
+require_relative 'lib/calendar'
 require 'date'
 print 'Введите первую дату в формате YYYY MM DD: '
 data1 = gets.chomp.split(' ').map(&:to_i)
