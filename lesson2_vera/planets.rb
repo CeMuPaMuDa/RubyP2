@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 PLANETS = {
-  'Меркурий'=> 0.32868,
+  'Меркурий' => 0.32868,
   'Венера' => 4.81068,
   'Земля' => 5.97600,
   'Марс' => 0.63345,
@@ -13,7 +13,7 @@ PLANETS = {
 }.freeze
 
 puts 'Cамые легкие планеты солнечной системы: '
-PLANETS.sort_by { |_key, val| val }[0..2].each{|key, val| puts "=> #{key}" }
+PLANETS.sort_by { |_key, val| val }[0..2].each { |key, _val| puts "=> #{key} : #{val}" }
 puts 'Cамые тяжелые планеты солнечной системы: '
 PLANETS.sort_by { |_key, val| val }.reverse[0..2]
-       .each{|key, val| puts "=> #{key}"}
+       .each { |key, _val| puts "=> #{key} : #{val}" }
