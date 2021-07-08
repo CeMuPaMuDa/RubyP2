@@ -2,6 +2,7 @@ AllCops:
   TargetRubyVersion: 3.0
   Exclude:
     - 'tmp/**/*'
+    - "spec/**/*"
 Style/AsciiComments:
   Enabled: false
 Style/Documentation:

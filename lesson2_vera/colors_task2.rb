@@ -5,7 +5,8 @@ print 'Введите цвет. Для окончания введите "stop":
 loop do
   color = gets.chomp
   break if color == 'stop'.downcase
-print 'Еще?: '
+
+  print 'Еще?: '
   colors << color
 end
 print colors.reject(&:empty?).uniq.sort

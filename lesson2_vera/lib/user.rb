@@ -1,12 +1,9 @@
 # frozen_string_literal: true
 
-
 class User
-  def initialize(fio, rating)
+  def initialize(fio)
     @fio = fio
-    @rating = rating
   end
 
-  attr_reader :fio, :rating
+  attr_reader :fio
 end
-

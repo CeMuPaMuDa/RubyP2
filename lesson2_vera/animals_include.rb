@@ -2,4 +2,4 @@
 
 arr = %w[cat dog tiger]
 
-print arr.select { |el| el.include? 't' }
+print(arr.select { |el| el.include? 't' })

@@ -6,7 +6,8 @@ loop do
   color = gets.chomp
 
   break if color == 'stop'.downcase
-print 'Еще?: '
+
+  print 'Еще?: '
   colors << color
 end
 
