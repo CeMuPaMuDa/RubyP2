@@ -13,7 +13,7 @@ PLANETS = {
 }.freeze
 
 puts 'Cамые легкие планеты солнечной системы: '
-PLANETS.sort_by { |_key, val| val }[0..2].each { |key, _val| puts "=> #{key} : #{val}" }
+PLANETS.sort_by { |_key, val| val }[0..2].each { |key, _val| puts "=> #{key}" }
 puts 'Cамые тяжелые планеты солнечной системы: '
 PLANETS.sort_by { |_key, val| val }.reverse[0..2]
-       .each { |key, _val| puts "=> #{key} : #{val}" }
+       .each { |key, _val| puts "=> #{key}" }
