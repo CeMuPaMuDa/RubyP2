@@ -1,0 +1,7 @@
+desc 'Задача по умолчанию'
+task default: :mcal
+
+desc 'Вывод текущей даты'
+task :mcal do
+  
+end

@@ -12,8 +12,8 @@ PLANETS = {
   'Плутон' => 0.01195
 }.freeze
 
-puts 'Cамые легкие планеты сщлнечной системы: '
+puts 'Cамые легкие планеты солнечной системы: '
 PLANETS.sort_by { |_key, val| val }[0..2].each{|key, val| puts "=> #{key}" }
-puts 'Cамые тяжелые планеты сщлнечной системы: '
+puts 'Cамые тяжелые планеты солнечной системы: '
 PLANETS.sort_by { |_key, val| val }.reverse[0..2]
        .each{|key, val| puts "=> #{key}"}
