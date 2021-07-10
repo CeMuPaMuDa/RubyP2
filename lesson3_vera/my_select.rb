@@ -1,5 +1,5 @@
-def my_select
+# frozen_string_literal: true
 
-end
+def my_select; end
 
-[1,2,3,4,5].my_select {|val| val.even?}
+[1, 2, 3, 4, 5].my_select(&:even?)

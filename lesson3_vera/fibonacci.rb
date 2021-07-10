@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 def fib(n)
-  f = ((1 + Math.sqrt(5)) / 2)**(n-1)
-  s = ((1 - Math.sqrt(5)) / 2)**(n-1)
+  f = ((1 + Math.sqrt(5)) / 2)**(n - 1)
+  s = ((1 - Math.sqrt(5)) / 2)**(n - 1)
   ((f - s) / Math.sqrt(5)).round
 end
 
