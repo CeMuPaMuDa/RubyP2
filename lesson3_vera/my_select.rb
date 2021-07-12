@@ -12,4 +12,4 @@ class Array
   end
 end
 
-p [1, 2, 3, 4, 5].my_select(&:even?)
+p [1, 2, 3, 4, 5].my_select(&:odd?)
