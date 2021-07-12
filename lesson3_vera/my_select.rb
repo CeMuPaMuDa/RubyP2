@@ -1,5 +1,15 @@
 # frozen_string_literal: true
 
-def my_select; end
+class Array
+  def my_select
+    each do |el|
+      if yield el
+        el
+      else
+      delete(el) 
+      end
+    end
+  end
+end
 
-[1, 2, 3, 4, 5].my_select(&:even?)
+p [1, 2, 3, 4, 5].my_select(&:even?)
