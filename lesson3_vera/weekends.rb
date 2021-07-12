@@ -7,12 +7,10 @@ class Date
     first = self
     second = first.next_year
     while first < second
-      if first.saturday? || first.sunday?
-        yield first.strftime('%d.%m.%Y')
-      end
+      yield first.strftime('%d.%m.%Y') if first.saturday? || first.sunday?
       first = first.next_day
     end
   end
 end
 
-Date.new(2022).weekends {|x| puts x}
+Date.new(2022).weekends { |x| puts x }
