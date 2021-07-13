@@ -7,13 +7,13 @@ def fib(n)
 end
 
 def fibonacci(num)
-  i = 1
+  i = 0
 
-  f = *(0..num)
-  while i <= num
-    yield fib(f[i])
-    i += 1
-
+  f = (1..num).to_a
+f.map do |x|
+yield fib(x)
+i += 1
+break if i >= num
   end
 end
 
