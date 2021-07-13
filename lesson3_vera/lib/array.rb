@@ -29,4 +29,15 @@ class Array
     end
     val
   end
+
+  def walk(&block)
+    each do |x|
+      case x
+      when Array
+        x.walk(&block)
+      when Integer || String
+        block.call(x)
+      end
+    end
+  end
 end
