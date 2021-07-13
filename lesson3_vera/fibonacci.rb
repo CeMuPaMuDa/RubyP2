@@ -7,6 +7,8 @@ def fib(n)
 end
 
 def fibonacci(num)
+  return unless block_given?
+
   i = 0
 
   f = (1..num).to_a
