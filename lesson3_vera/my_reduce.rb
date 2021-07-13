@@ -8,4 +8,4 @@ class Array
     val
   end
 end
-p [1, 2, 3, 4, 5].my_reduce { |a, b| a * b }
+puts([1, 2, 3, 4, 5].my_reduce { |a, b| a * b })

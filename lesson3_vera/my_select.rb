@@ -6,9 +6,8 @@ class Array
     each do |el|
       clone.push(el) if yield el
     end
-clone
+    clone
   end
 end
 arr = [1, 2, 3, 4, 5]
 p arr.my_select(&:odd?)
-

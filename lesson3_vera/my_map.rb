@@ -10,4 +10,4 @@ class Array
   end
 end
 arr = [1, 2, 3, 4, 5]
-print arr.my_map { |n| n * n }
+print(arr.my_map { |n| n * n })
