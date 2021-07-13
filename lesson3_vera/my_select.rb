@@ -2,14 +2,13 @@
 
 class Array
   def my_select
+    clone = []
     each do |el|
-      if yield el
-        el
-      else
-      delete(el) 
-      end
+      clone.push(el) if yield el
     end
+clone
   end
 end
+arr = [1, 2, 3, 4, 5]
+p arr.my_select(&:odd?)
 
-p [1, 2, 3, 4, 5].my_select(&:odd?)

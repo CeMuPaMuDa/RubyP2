@@ -10,11 +10,13 @@ def fibonacci(num)
   i = 0
 
   f = (1..num).to_a
-f.map do |x|
-yield fib(x)
-i += 1
-break if i >= num
+  f.map do |x|
+    yield fib(x)
+    i += 1
+    break if i >= num
   end
 end
 
-fibonacci(10) { |f| print "#{f} " }
+print 'Введите номер элемента ряда Фибоначчи: '
+my_num = gets.to_i
+fibonacci(my_num) { |f| print "#{f} " }
