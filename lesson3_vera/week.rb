@@ -2,4 +2,4 @@
 
 require_relative 'lib/date'
 
-Date.new.week { |x| puts x }
+Date.new(2021).week { |x| puts x }
