@@ -2,7 +2,8 @@
 
 require 'rubygems'
 require 'bundler/setup'
-require 'faker'
+
+Bundler.require(:default)
 
 class Generation
   def create(n)

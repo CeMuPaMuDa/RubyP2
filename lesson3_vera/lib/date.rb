@@ -3,6 +3,15 @@
 require 'date'
 
 class Date
+  def week(num_week = Date.today.cweek)
+    return unless block_given?
+
+    day_of_week = (1..7).to_a
+    day_of_week.each do |x|
+      yield Date.commercial(year, num_week, x).strftime('%d.%m.%Y')
+    end
+  end
+
   def weekends
     first = self
     second = first.next_year
@@ -12,5 +21,3 @@ class Date
     end
   end
 end
-
-Date.new(2021).weekends { |x| puts x }

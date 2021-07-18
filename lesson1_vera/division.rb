@@ -11,5 +11,4 @@ loop do
   break unless b.zero? || b.nil?
 end
 
-
 puts "Результат деления: #{MathemathicsOperations.new.division(a, b)}"
