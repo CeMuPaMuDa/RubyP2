@@ -3,6 +3,7 @@ class Time
   DAY = 12...18
   EVENING = 18..23
   NIGHT = 0...6
+  
   SAY_GOOD_MORNING = 'Доброе утро!'
   SAY_GOOD_DAY = 'Добрый день!'
   SAY_GOOD_EVENING = 'Добрый вечер!'

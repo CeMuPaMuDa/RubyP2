@@ -1,10 +1,4 @@
-# frozen_string_literal: true
-
-class Building
-attr_accessor :num_of_floor, :type_of_cnstr, :type_of_building
-
-end
-
+require_relative 'lib/building'
 house = Building.new
 print 'Введите количество этажей в здании: '
 num = gets.to_i
