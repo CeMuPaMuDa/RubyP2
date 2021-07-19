@@ -1,30 +1,37 @@
+# frozen_string_literal: true
+
+# rubocop:disable Style/ClassVars
 class Factory
-  @@count = 0
   @@toys = []
 
   def build(toy)
-    @@count += 1
+
     case toy
-      when :teddy_bear
-        @@toys << TeddyBear.new
-      when :ball
-        @@toys << Ball.new
-      when :cube
-        @@toys << Cube.new
-      end
-  end
-def self.count
-  @@count
-end
-def self.all
-  @@toys
-end
-
-  class TeddyBear
-  end
-  class Ball
-  end
-  class Cube
+    when :teddy_bear then @@toys << TeddyBear.new
+    when :ball then @@toys << Ball.new
+    when :cube then @@toys << Cube.new
+    end
   end
 
+  def self.total
+    @@toys.count
+  end
+
+  def self.offers
+    tb_count = @@toys.select{|x| x.class == TeddyBear}.count
+    b_count = @@toys.select{|x| x.class == Ball}.count
+    c_count = @@toys.select{|x| x.class ==Cube}.count
+    @@statistic = {
+      teddy_bear: tb_count,
+      ball: b_count,
+      cube: c_count
+    }
+  end
+
+  class TeddyBear; end
+
+  class Ball; end
+
+  class Cube; end
 end
+# rubocop:enable Style/ClassVars
