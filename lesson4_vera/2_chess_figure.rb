@@ -2,7 +2,7 @@
 
 require_relative 'lib/chess'
 
-black_queen = Chess.new('ферзь', 'black')
+black_queen = Chess.new('ферзь', 'черный')
 white_queen = Chess.new('ферзь')
 
 puts '--------------------------------------'
