@@ -1,9 +1,10 @@
 # frozen_string_literal: true
+# frozen_string_literal: true
 
-require_relative 'lib/substance'
+require_relative 'lib/sm_substance'
 require_relative 'lib/const'
 transfer = ''
-water = Substance.new
+water = SmSubstance.new
 
 loop do
   puts '---------------------------------------'
@@ -12,6 +13,8 @@ loop do
   puts '---------------------------------------'
   print '>>'
   transfer = gets.chomp.downcase
+
+
 
   case transfer
   when '1' then puts water.melt
