@@ -5,7 +5,6 @@ class Factory
   @@toys = []
 
   def build(toy)
-
     case toy
     when :teddy_bear then @@toys << TeddyBear.new
     when :ball then @@toys << Ball.new
@@ -18,9 +17,9 @@ class Factory
   end
 
   def self.offers
-    tb_count = @@toys.select{|x| x.class == TeddyBear}.count
-    b_count = @@toys.select{|x| x.class == Ball}.count
-    c_count = @@toys.select{|x| x.class ==Cube}.count
+    tb_count = @@toys.select { |x| x.instance_of?(TeddyBear) }.count
+    b_count = @@toys.select { |x| x.instance_of?(Ball) }.count
+    c_count = @@toys.select { |x| x.instance_of?(Cube) }.count
     @@statistic = {
       teddy_bear: tb_count,
       ball: b_count,
