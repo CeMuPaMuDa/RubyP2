@@ -14,8 +14,6 @@ loop do
   print '>>'
   transfer = gets.chomp.downcase
 
-
-
   case transfer
   when '1' then puts water.melt
   when '2' then puts water.freeze
