@@ -1,5 +1,5 @@
 class User
-  def initialize(surname, name, patronymic)
+  def initialize(surname:, name:, patronymic: '')
     @name = name
     @surname = surname
     @patronymic = patronymic

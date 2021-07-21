@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-# frozen_string_literal: true
+
 
 require_relative 'lib/sm_substance'
 require_relative 'lib/const'
