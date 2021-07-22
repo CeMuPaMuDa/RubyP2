@@ -12,4 +12,4 @@ end
 puts "Имя: #{user.name}"
 puts "Отчество: #{user.patronymic}"
 puts "Фамилия: #{user.surname}"
-puts "Є-мейл: #{user.email}"
+puts "Е-мейл: #{user.email}"
