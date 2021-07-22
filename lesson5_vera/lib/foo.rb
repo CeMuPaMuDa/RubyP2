@@ -6,11 +6,7 @@ class Foo
   end
 
   def method_missing(mtd)
-    if @hash.include?(mtd)
-      @hash[mtd]
-    else
-      'Чего тебе надобно, старче?'
-    end
+    @hash.fetch(mtd, 'Чего тебе надобно, старче?')
   end
 
   def respond_to_missing?(method, include_private = false)
