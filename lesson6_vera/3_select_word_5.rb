@@ -3,7 +3,8 @@
 # rubocop:disable Layout/LineLength
 puts WORDS = 'Возьмите текст этого задания и извлеките из него все слова, количество символов в которых больше 5. Подсчитайте количество слов и выведите их алфавитном порядке'
 # rubocop:enable Layout/LineLength
-arr_words = WORDS.split(/[\s,.]/).map(&:downcase).select { |el| el.size >= 5 }.sort
+arr_words = WORDS.split(/[\s,.']/).map(&:downcase)
+                 .select { |el| el.size >= 5 }.sort
 i = 0
 
 puts '- - - - - - - - - - - - - - - - -'
