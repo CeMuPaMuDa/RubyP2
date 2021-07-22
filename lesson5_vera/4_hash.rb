@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require_relative 'lib/foo'
-ENG = { i: 'я', you: 'ты', we: 'мы' }.freeze
-translate = Foo.new(ENG)
+ENG_RU = { i: 'я', you: 'ты', we: 'мы' }.freeze
+translate = Foo.new(ENG_RU)
 
 puts translate.i
 puts translate.you
