@@ -1,12 +1,11 @@
-%w[homo_sapiens people hominids primates mammals chordates animals].each do |f|
-require_relative "lib/#{f}"
-end
+# frozen_string_literal: true
 
-puts infusoria_slipper   = Animals.new
-puts strix   = Chordates.new
-puts whale    = Mammals.new
-puts tamarin    = Primates.new
-puts bonobos    = Hominids.new
-puts yeti    = People.new
-puts vera_zbitneva   = HomoSapiens.new
+require_relative 'lib/animals_classes'
 
+puts _infusoria_slipper = Animals.new
+puts _strix = Chordates.new
+puts _whale = Mammals.new
+puts _tamarin    = Primates.new
+puts _bonobos    = Hominids.new
+puts _yeti = People.new
+puts _vera_zbitneva = HomoSapiens.new
