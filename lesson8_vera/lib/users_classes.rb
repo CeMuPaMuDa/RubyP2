@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class User
-  attr_accessor :read_post
+  attr_accessor :read_post, :surname, :name, :patronymic, :email
 
   def say
     self.class.to_s
